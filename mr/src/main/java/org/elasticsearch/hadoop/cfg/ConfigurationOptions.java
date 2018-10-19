@@ -67,6 +67,9 @@ public interface ConfigurationOptions {
 
     String ES_NODES_RESOLVE_HOST_NAME = "es.nodes.resolve.hostname";
 
+    String ES_READ_ONLY_NODES = "es.read.only.nodes";
+    String ES_READ_ONLY_NODES_DEFAULT = "";
+
     /** Elasticsearch batch size given in bytes */
     String ES_BATCH_SIZE_BYTES = "es.batch.size.bytes";
     String ES_BATCH_SIZE_BYTES_DEFAULT = "1mb";
