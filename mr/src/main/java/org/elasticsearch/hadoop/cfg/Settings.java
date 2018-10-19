@@ -79,6 +79,8 @@ public abstract class Settings {
         return Booleans.parseBoolean(getProperty(ES_NODES_DISCOVERY), !getNodesWANOnly());
     }
 
+    public String getOnlyNodes() { return getProperty(ES_READ_ONLY_NODES, ES_READ_ONLY_NODES_DEFAULT);}
+
     public String getNodesPathPrefix() {
         return getProperty(ES_NODES_PATH_PREFIX, ES_NODES_PATH_PREFIX_DEFAULT);
     }
